@@ -3,30 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Yuhan Shu - AI agents, world models, embodied intelligence, graphics, and quantitative modeling.">
+  <meta name="description" content="Yuhan Shu — AI agents, world models, embodied intelligence, graphics, and quantitative modeling.">
+  <meta name="theme-color" content="#4b1d78">
   <title>Yuhan Shu | Research & Engineering</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-glow" aria-hidden="true"></div>
   <header class="nav shell">
-    <a class="wordmark" href="/">YUHAN SHU<span>.</span></a>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#interests">Interests</a>
-      <a href="https://github.com/Yu-han-Shu">GitHub</a>
-    </nav>
+    <a class="brand" href="/" aria-label="Yuhan Shu home">
+      <span class="brand-monogram">YS</span>
+      <span class="wordmark">YUHAN SHU<span>.</span></span>
+    </a>
+    <div class="nav-right">
+      <div class="campus-mark"><img src="assets/nju-logo.png" alt="Nanjing University"><span>NANJING<br>UNIVERSITY</span></div>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#interests">Interests</a>
+        <a href="https://github.com/Yu-han-Shu">GitHub <span>↗</span></a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero shell">
-      <div class="eyebrow">NANJING UNIVERSITY · AI / COMPUTING</div>
-      <h1>Building agents that<br><em>reason, perceive, and act.</em></h1>
-      <p class="lede">I am Yuhan Shu, an undergraduate exploring AI agents, world models, embodied intelligence, and graphics — with a parallel interest in quantitative modeling.</p>
-      <div class="hero-links">
-        <a class="button primary" href="#work">Explore selected work <span>↗</span></a>
-        <a class="text-link" href="https://github.com/Yu-han-Shu">View GitHub <span>↗</span></a>
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span class="eyebrow-dot"></span>NANJING UNIVERSITY · AI / COMPUTING</div>
+        <h1 class="reveal delay-1">Building agents that<br><em>reason, perceive, and act.</em></h1>
+        <p class="lede reveal delay-2">I am Yuhan Shu, an undergraduate entering the <strong>Agent / World Model / Embodied Intelligence</strong> space — using graphics and quantitative projects to prove I can turn technical ideas into rigorous working systems.</p>
+        <div class="hero-links reveal delay-3">
+          <a class="button primary" href="#work">Explore selected work <span>↗</span></a>
+          <a class="text-link" href="https://github.com/Yu-han-Shu">View GitHub <span>↗</span></a>
+        </div>
       </div>
-      <div class="signal-grid" aria-label="Research themes">
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="orbit-core"><span>AGENT</span><b>→</b><span>WORLD</span></div>
+        <i class="node node-a"></i><i class="node node-b"></i><i class="node node-c"></i><i class="node node-d"></i>
+        <span class="orbit-label label-a">PERCEIVE</span><span class="orbit-label label-b">PLAN</span><span class="orbit-label label-c">ACT</span>
+      </div>
+      <div class="signal-grid reveal delay-4" aria-label="Research themes">
         <div><strong>01</strong><span>Agents & reasoning</span></div>
         <div><strong>02</strong><span>World models</span></div>
         <div><strong>03</strong><span>Embodied intelligence</span></div>
@@ -34,14 +50,14 @@
       </div>
     </section>
 
-    <section id="interests" class="section shell">
-      <div class="section-label">01 / INTERESTS</div>
+    <section id="interests" class="section shell reveal-on-scroll">
+      <div class="section-label">01 / RESEARCH INTERESTS</div>
       <div class="interest-layout">
         <h2>From ideas<br>to <em>working systems.</em></h2>
         <div class="interest-copy">
-          <p>My research interests sit at the intersection of intelligent decision-making and the environments in which decisions happen.</p>
+          <p>My work sits at the intersection of intelligent decision-making and the environments in which decisions happen.</p>
           <div class="interest-list">
-            <div><b>AI agents</b><span>Tool use, solver-verifier loops, multi-agent coordination, and reliable evaluation.</span></div>
+            <div><b>AI agents</b><span>Tool use, solver–verifier loops, multi-agent coordination, and reliable evaluation.</span></div>
             <div><b>World models</b><span>Perception, latent dynamics, planning, and the bridge from prediction to action.</span></div>
             <div><b>Graphics & 3D</b><span>Reconstruction, geometry, localization, and collision-aware navigation.</span></div>
             <div><b>Quant modeling</b><span>Independent factor research, validation, and research-oriented backtesting.</span></div>
@@ -50,47 +66,63 @@
       </div>
     </section>
 
-    <section id="work" class="section shell">
-      <div class="section-label">02 / SELECTED WORK</div>
+    <section id="work" class="section shell reveal-on-scroll">
+      <div class="section-label">02 / SELECTED WORK <span>click a card to inspect the code</span></div>
       <div class="work-grid">
         <a class="project project-featured" href="https://github.com/Yu-han-Shu/realityscan-uv3d-navigation">
-          <div class="project-top"><span>GRAPHICS · 3D</span><span>↗</span></div>
+          <div class="project-top"><span>GRAPHICS · 3D · EMBODIED</span><span>↗</span></div>
           <h3>RealityScan<br>UV-to-3D Navigation</h3>
-          <p>Validated localization and point-cloud path planning pipeline with collision-aware navigation.</p>
+          <p>Built and validated a localization-to-navigation pipeline: 500/500 images registered, 25/25 paths completed, and collision violations held at zero in the released evaluation.</p>
           <div class="tags"><span>Python</span><span>Open3D</span><span>COLMAP</span></div>
         </a>
         <a class="project" href="https://github.com/Yu-han-Shu/mathagent_demo">
           <div class="project-top"><span>AI · AGENTS</span><span>↗</span></div>
           <h3>MathAgent<br>Demo</h3>
-          <p>Solver-verifier workflow, local symbolic tools, batch experiments, and offline reports.</p>
+          <p>Solver–verifier workflow with local symbolic tools, batch experiments, and offline reports for reproducible mathematical reasoning.</p>
           <div class="tags"><span>Python</span><span>SymPy</span></div>
         </a>
         <a class="project" href="https://github.com/Yu-han-Shu/quant-factor-research-lab">
-          <div class="project-top"><span>MODELING</span><span>↗</span></div>
+          <div class="project-top"><span>QUANTITATIVE RESEARCH</span><span>↗</span></div>
           <h3>Quant Factor<br>Research Lab</h3>
-          <p>Modular factor evaluation, validation, experiment tracking, and cost-aware backtesting.</p>
+          <p>Modular factor research framework with 17 categories, 131 definitions, IC/ICIR evaluation, walk-forward validation, FDR control, and cost-aware portfolios.</p>
           <div class="tags"><span>Python</span><span>Research</span></div>
         </a>
         <a class="project" href="https://github.com/Yu-han-Shu/PA-Synera-Synergy-Auto-Arena">
           <div class="project-top"><span>ENGINEERING · C++</span><span>↗</span></div>
           <h3>Synera<br>Auto Arena</h3>
-          <p>Object-oriented auto-battler prototype with state-machine logic and Qt/QML interface.</p>
+          <p>Object-oriented auto-battler prototype with state-machine logic, simulation-ready rules, and a Qt/QML interface.</p>
           <div class="tags"><span>C++</span><span>Qt/QML</span></div>
         </a>
       </div>
     </section>
 
-    <section class="closing shell">
-      <div class="section-label">03 / NOW</div>
-      <h2>Learning in public.<br><em>Building with intent.</em></h2>
-      <p>Currently reading and prototyping around agents, world models, embodied intelligence, and graphics.</p>
+    <section class="evidence shell reveal-on-scroll">
+      <div class="section-label">03 / SELECTED EVIDENCE</div>
+      <div class="evidence-grid">
+        <div><strong>#4</strong><span>BigAlpha 2026 AI track public leaderboard<br><small>Agentic Alphas · team result</small></span></div>
+        <div><strong>LAMDA</strong><span>NJU undergraduate research project<br><small>Mathematical reasoning & world models</small></span></div>
+        <div><strong>CCF</strong><span>Graphics Rising Star Summer Camp<br><small>Selected participant · 2026.08</small></span></div>
+        <div><strong>IEEE</strong><span>Student member<br><small>Technical community & practice</small></span></div>
+      </div>
+    </section>
+
+    <section class="closing shell reveal-on-scroll">
+      <div class="section-label">04 / NOW</div>
+      <h2>Reading deeply.<br><em>Building with intent.</em></h2>
+      <p>Currently reading and planning research around agents, world models, embodied intelligence, and graphics — with quantitative modeling as a parallel technical practice.</p>
       <a class="button primary" href="https://github.com/Yu-han-Shu">See the code <span>↗</span></a>
     </section>
   </main>
 
   <footer class="footer shell">
     <span>© 2026 Yuhan Shu</span>
-    <span>Nanjing, China</span>
+    <span>Undergraduate · Nanjing University · Nanjing, China</span>
   </footer>
+  <script>
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+    }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
